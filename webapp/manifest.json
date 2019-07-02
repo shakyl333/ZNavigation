@@ -94,21 +94,23 @@
 				"viewLevel": 1
 			},
 			"routes": [{
-				"name": "Route_source",
-				"pattern": "",
-				"target": ["V_Source"]
-			}, {
-				"name": "Route_tar_1",
+				"name": "Route_Source",
 				"pattern": "",
 				"titleTarget": "",
 				"greedy": false,
-				"target": ["V_Target_1"]
+				"target": ["Traget_source"]
 			}, {
-				"name": "Route_tar_2",
-				"pattern": "",
+				"name": "Route_Tar_1",
+				"pattern": "V_Target_1",
 				"titleTarget": "",
 				"greedy": false,
-				"target": ["V_Target_2"]
+				"target": ["Target_1"]
+			}, {
+				"name": "Route_Tar_2",
+				"pattern": "V_Target_2",
+				"titleTarget": "",
+				"greedy": false,
+				"target": ["Traget_2"]
 			}],
 			"targets": {
 				"TargetV_root": {
@@ -133,14 +135,14 @@
 				"Traget_source": {
 					"viewType": "XML",
 					"transition": "slide",
-					"clearControlAggregation": false,
+					"clearControlAggregation": true,
 					"viewName": "V_Source",
 					"viewLevel": 1
 				},
 				"Target_1": {
 					"viewType": "XML",
 					"transition": "slide",
-					"clearControlAggregation": false,
+					"clearControlAggregation": true,
 					"viewName": "V_Target_1",
 					"viewLevel": 2
 				},
@@ -149,7 +151,7 @@
 					"transition": "slide",
 					"clearControlAggregation": true,
 					"viewName": "V_Target_2",
-					"viewLevel": 3
+					"viewLevel": 2
 				}
 			}
 		}
