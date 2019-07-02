@@ -1,0 +1,11 @@
+<mvc:View controllerName="ZNavigation.ZNavigation.controller.V_root" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="V_main">
+			<pages>
+				<Page id="page" title="Root View">
+					<content></content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
